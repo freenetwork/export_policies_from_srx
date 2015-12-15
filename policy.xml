@@ -1,0 +1,84 @@
+<rpc-reply xmlns:junos="http://xml.juniper.net/junos/12.1X46/junos">
+    <security-policies junos:style="brief">
+        <default-policy>deny-all</default-policy>
+        <security-context>
+            <context-information>
+                <source-zone-name>trust</source-zone-name>
+                <destination-zone-name>trust</destination-zone-name>
+            </context-information>
+            <policies>
+                <policy-information>
+                    <policy-name>SSH</policy-name>
+                    <policy-state>enabled</policy-state>
+                    <policy-identifier>4</policy-identifier>
+                    <scope-policy-identifier>0</scope-policy-identifier>
+                    <policy-sequence-number>1</policy-sequence-number>
+                    <source-addresses junos:style="brief">
+                        <source-address>
+                            <address-name>any</address-name>
+                        </source-address>
+                    </source-addresses>
+                    <destination-addresses junos:style="brief">
+                        <destination-address>
+                            <address-name>any</address-name>
+                        </destination-address>
+                    </destination-addresses>
+                    <applications junos:style="brief">
+                        <application>
+                            <application-name>SSH</application-name>
+                        </application>
+                    </applications>
+                    <source-identities junos:style="brief">
+                    </source-identities>
+                    <policy-action>
+                        <action-type>permit</action-type>
+                        <policy-tcp-options>
+                            <policy-tcp-options-syn-check>No</policy-tcp-options-syn-check>
+                            <policy-tcp-options-sequence-check>No</policy-tcp-options-sequence-check>
+                        </policy-tcp-options>
+                    </policy-action>
+                    <policy-application-services>
+                    </policy-application-services>
+                </policy-information>
+            </policies>
+            <policies>
+                <policy-information>
+                    <policy-name>1433-timeout</policy-name>
+                    <policy-state>enabled</policy-state>
+                    <policy-identifier>5</policy-identifier>
+                    <scope-policy-identifier>0</scope-policy-identifier>
+                    <policy-sequence-number>2</policy-sequence-number>
+                    <source-addresses junos:style="brief">
+                        <source-address>
+                            <address-name>any</address-name>
+                        </source-address>
+                    </source-addresses>
+                    <destination-addresses junos:style="brief">
+                        <destination-address>
+                            <address-name>any</address-name>
+                        </destination-address>
+                    </destination-addresses>
+                    <applications junos:style="brief">
+                        <application>
+                            <application-name>TCP-1433</application-name>
+                        </application>
+                    </applications>
+                    <source-identities junos:style="brief">
+                    </source-identities>
+                    <policy-action>
+                        <action-type>permit</action-type>
+                        <policy-tcp-options>
+                            <policy-tcp-options-syn-check>No</policy-tcp-options-syn-check>
+                            <policy-tcp-options-sequence-check>No</policy-tcp-options-sequence-check>
+                        </policy-tcp-options>
+                    </policy-action>
+                    <policy-application-services>
+                    </policy-application-services>
+                </policy-information>
+            </policies>
+        </security-context>
+    </security-policies>
+    <cli>
+        <banner></banner>
+    </cli>
+</rpc-reply>

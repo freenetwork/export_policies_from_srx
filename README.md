@@ -11,9 +11,9 @@ junos-device# show security policies | display xml | no-more
 We can save the result to file and open in MS Exel or other application. But this format inconvenient for edit.
 
 
-1) junos-device# show security policies | display xml | no-more
-2) save result in file polixy.xml
-3) editable in script "_address" and "_appication" dictionaries according to your configuration
+# 1) junos-device# show security policies | display xml | no-more
+# 2) save result in file polixy.xml
+# 3) editable in script "_address" and "_appication" dictionaries according to your configuration
 
     ### example 1 : if your configuration file contains 
     ### set applications application TCP_1433 protocol tcp
@@ -27,7 +27,7 @@ We can save the result to file and open in MS Exel or other application. But thi
     ### 
     ### add to _address variable "NTP_1": "8.8.8.8/32"
     
-4) run python script export_policies_from_srx.py and get csv result
+# 4) run python script export_policies_from_srx.py and get csv result
 
 
 BUT WE HAVE ONE PROBLEM:

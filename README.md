@@ -6,7 +6,7 @@ PROBLEM OR GOAL:
 How can I export a policy configuration from an SRX device to an XML-compliant spreadsheet? 
 
 SOLUTION:
-# show security policies | display xml | no-more
+junos-device# show security policies | display xml | no-more
 
 We can save the result to file and open in MS Exel or other application. But this format inconvenient for edit.
 

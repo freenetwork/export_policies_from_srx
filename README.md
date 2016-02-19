@@ -1,9 +1,9 @@
 # export_policies_from_srx
-Exporting a policy configuration from a Juniper device to an CSV and XSL
+Exporting a policy configuration from a Juniper device to a CSV and XSL readable for Chief
 
 
 PROBLEM OR GOAL:
-How can I export a policy configuration from an SRX device to an XML-compliant spreadsheet? 
+How can I export a policy configuration from a SRX device to a XML-compliant spreadsheet? 
 
 SOLUTION:
 junos-device# show security policies | display xml | no-more
